@@ -1,0 +1,38 @@
+
+@import "_variables.scss";
+
+*, h1, h2, h3, h4, h5, h6, ul, li, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+select,
+option,
+input,
+button {
+    outline: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.inner {
+    display:block;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.color-primary {
+    color: $primary-color;
+}

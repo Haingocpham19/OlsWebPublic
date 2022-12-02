@@ -1,0 +1,109 @@
+@import "_variables.scss";
+
+$--background-color-active:white;
+
+header {
+    height:80px;
+    background-color: transparent;
+    z-index: 99;
+    width: 100%;
+    //box-shadow: 0 8px 29px rgb(0 0 0 / 10%);
+    /*    box-shadow: 0 0 6px #333;
+*/  position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    color:#fff;
+    transition: all 0.2s ease-in-out;
+
+    .inner{
+        height:100%;
+        .header-logo{
+            a{
+                img{
+                    max-height: 54px;
+                }
+            }
+            #logo-black{
+                display:none;
+            }
+        }
+        .menu{
+            ul{
+                font-weight: 700;
+                font-size:16px;
+                list-style: none;
+                li{
+                    margin-left:24px;
+                    &::after{
+                        content:"";
+                        width:0%;
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+                li:hover{
+                    cursor: pointer;
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        left:0;
+                        bottom:-8px;
+                        background-color:var(--background-color-active);
+                        height:3px;
+                        border-radius: 4px;
+                        width: 100%;
+                    }
+                }
+                .active{
+                    position:relative;
+                }
+                .active::after{
+                    content:"";
+                    position: absolute;
+                    left:0;
+                    bottom:-8px;
+                    background-color:var(--background-color-active);
+                    height:3px;
+                    width:100%;
+                    border-radius: 4px;
+                }
+            }
+        }
+        .left-header{
+            .btn{
+                margin-right:10px;
+                border-radius: 8px;
+                padding:8px 16px;
+                &.btn-trial{
+                    background-color:$white-color;
+                    &:hover{
+                        background-color:#DFE0DF;
+                    }
+                }
+                &.btn-login{
+                    //border:1px solid $primary-color;
+                    background-color:$primary-color;
+                    color:$white-color;
+                    &:hover{
+                        border:1px solid unset;
+                        background-color:#DFE0DF;
+                        color:$white-color;
+                    }
+                }
+            }
+            .change-language{
+                cursor: pointer;
+                img{
+                    max-height: 20px;
+                    border-radius: 4px;
+                }
+            }
+           
+        }
+    }
+}
+
+@keyframes linearWidth {
+    from {width: 0;}
+    to {width: 100%;}
+}

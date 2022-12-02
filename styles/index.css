@@ -1,0 +1,231 @@
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 200;
+  src: url("/fonts/NunitoSans-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/NunitoSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/NunitoSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/NunitoSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/NunitoSans-ExtraBold.ttf") format("truetype");
+}
+*, h1, h2, h3, h4, h5, h6, ul, li, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+select,
+option,
+input,
+button {
+  outline: none;
+}
+select:hover, select:focus, select:active,
+option:hover,
+option:focus,
+option:active,
+input:hover,
+input:focus,
+input:active,
+button:hover,
+button:focus,
+button:active {
+  outline: none;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.inner {
+  display: block;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.color-primary {
+  color: #FCB815;
+}
+
+header {
+  height: 80px;
+  background-color: transparent;
+  z-index: 99;
+  width: 100%;
+  /*    box-shadow: 0 0 6px #333;
+  */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+header .inner {
+  height: 100%;
+}
+header .inner .header-logo a img {
+  max-height: 54px;
+}
+header .inner .header-logo #logo-black {
+  display: none;
+}
+header .inner .menu ul {
+  font-weight: 700;
+  font-size: 16px;
+  list-style: none;
+}
+header .inner .menu ul li {
+  margin-left: 24px;
+}
+header .inner .menu ul li::after {
+  content: "";
+  width: 0%;
+  transition: all 0.5s ease-in-out;
+}
+header .inner .menu ul li:hover {
+  cursor: pointer;
+  position: relative;
+}
+header .inner .menu ul li:hover::after {
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  background-color: var(--background-color-active);
+  height: 3px;
+  border-radius: 4px;
+  width: 100%;
+}
+header .inner .menu ul .active {
+  position: relative;
+}
+header .inner .menu ul .active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  background-color: var(--background-color-active);
+  height: 3px;
+  width: 100%;
+  border-radius: 4px;
+}
+header .inner .left-header .btn {
+  margin-right: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+header .inner .left-header .btn.btn-trial {
+  background-color: #fff;
+}
+header .inner .left-header .btn.btn-trial:hover {
+  background-color: #DFE0DF;
+}
+header .inner .left-header .btn.btn-login {
+  background-color: #FCB815;
+  color: #fff;
+}
+header .inner .left-header .btn.btn-login:hover {
+  border: 1px solid unset;
+  background-color: #DFE0DF;
+  color: #fff;
+}
+header .inner .left-header .change-language {
+  cursor: pointer;
+}
+header .inner .left-header .change-language img {
+  max-height: 20px;
+  border-radius: 4px;
+}
+
+@-webkit-keyframes linearWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes linearWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.slide-home {
+  height: 100vh;
+  background: url(/images/bg-banner-2.jpg) rgba(134, 134, 134, 0.445);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.slide-home .inner {
+  height: 100%;
+  position: relative;
+}
+.slide-home .text-banner {
+  color: #fff;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 0;
+  position: absolute;
+}
+.slide-home .text-banner h1 {
+  font-size: 44px;
+  line-height: 60px;
+  font-weight: 700;
+}
+.slide-home .text-banner h3 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.slide-home .text-banner .btn-feature {
+  margin-top: 40px;
+  display: flex;
+}
+.slide-home .text-banner .btn-feature .btn {
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+.slide-home .text-banner .btn-feature .btn.btn-trial {
+  background-color: #fff;
+}
+.slide-home .text-banner .btn-feature .btn.btn-trial:hover {
+  background-color: rgba(255, 145, 0, 0.8705882353);
+}
+.slide-home .text-banner .btn-feature a {
+  display: block;
+}
+.slide-home .text-banner .btn-feature img {
+  margin-left: 20px;
+  max-height: 40px;
+}
+
+.introduce {
+  height: 100vh;
+  background-color: #fff;
+}/*# sourceMappingURL=index.css.map */
