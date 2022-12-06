@@ -6,15 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/index.css">
+
 </head>
 
 <body>
     <header>
-        <div class="inner d-flex justify-content-between align-items-center">
+        <div class="inner d-flex justify-content-between align-items-center" >
             <div class="d-flex align-items-center ">
                 <div class="header-logo">
                     <a id="logo-black" href="/"><img src="/images/logo.png" alt=""></a>
@@ -22,29 +30,30 @@
                 </div>
                 <div class="menu">
                     <ul id="menu-top" class="d-flex justify-content-end">
-                        <li id="menu-1" class="active">Trang chủ</li>
-                        <li id="menu-2" onClick="scrollToIntroduce(event)">Giới Thiệu</li>
-                        <li id="menu-3" onClick="scrollToIntroduce(event)">Tính năng</li>
-                        <li onClick="scrollToIntroduce(event)">Bảng giá</li>
-                        <li onClick="scrollToIntroduce(event)">Liên hệ</li>
+                        <li id="menu-1"><a href="#home" >Trang chủ</a></li>
+                        <li id="menu-2"><a href="#introduce" >Giới thiệu</a></li>
+                        <li id="menu-3"><a href="#feature" >Tính năng</a></li>
+                        <li>Bảng giá</li>
+                        <li>Liên hệ</li>
                     </ul>
                 </div>
             </div>
             <div class="left-header d-flex align-items-center">
-                <a href="#" class="btn btn-trial">Đăng ký dùng thử</a>
-                <a href="#" class="btn btn-login">Đăng nhập</a>
                 <div class="change-language">
                     <img src="/images/flag-vn.png" alt="">
                 </div>
+                <a href="#" class="btn btn-trial">Đăng ký dùng thử</a>
+                <a href="#" class="btn btn-login">Đăng nhập</a>
             </div>
         </div>
     </header>
-    <div class="slide-home">
+    <div class="slide-home" id="home">
         <div class="inner">
             <div class="col-6 text-banner">
                 <h1>Giải pháp đào tạo nhân sự trực tuyến
                     dành cho doanh nghiệp</h1>
-                <h3>Đào tạo cho hàng ngàn nhân viên nhanh chóng và hiệu quả được hơn 100 doanh nghiệp thuộc mọi lĩnh vực ngành nghề tin dùng.</h3>
+                <h3>Đào tạo cho hàng ngàn nhân viên nhanh chóng và hiệu quả được hơn 100 doanh nghiệp thuộc mọi lĩnh vực
+                    ngành nghề tin dùng.</h3>
                 <div class="btn-feature">
                     <a href="#" class="btn btn-trial">
                         Đăng ký dùng thử
@@ -59,9 +68,392 @@
             </div>
         </div>
     </div>
-    <div class="introduce" id="introduce">
 
+    <div class="slide-tabs" id="introduce">
+        <div class="inner">
+            <h2>Áp dụng ngay tại OLS</h2>
+            <h4>Giúp truyền tải kiến thức hiệu quả gấp 3 lần so với truyền thống </h4>
+
+            <div class="tabs-select">
+                <div class="col-4 t-select-item" id="select-0">Lãnh đạo</div>
+                <div class="col-4 t-select-item" id="select-1">Nhân sự</div>
+                <div class="col-4 t-select-item" id="select-2">Người đào tạo</div>
+            </div>
+
+            <div class="tabs-container">
+                <div class="tab-item">
+                    <div class="col-6">
+                        <div class="tab tab-1">
+                            <div class="tab-content tab-c-1">
+                                <h3 class="before">
+                                    Trước đây
+                                </h3>
+                                <ul>
+                                    <li>Tốn kém thời gian đào tạo nhân sự</li>
+                                    <li>Tốn chi phí in ấn , tài liệu cho học viên</li>
+                                    <li>Loay hoay trong việc đào tạo văn hóa doanh nghiệp</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="tab tab-2">
+                            <div class="tab-content tab-c-2">
+                                <h3 class="after">
+                                    Giờ đây
+                                </h3>
+                                <ul>
+                                    <li>Tiết kiệm 80% chi phí cho nhân sự và tổ chức đào tạo</li>
+                                    <li>Báo cáo cập nhật liên tục tình hình hội nhập của nhân viên</li>
+                                    <li>Xây dựng văn hóa học tập trong doanh nghiệp</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-item">
+                    <div class="col-6">
+                        <div class="tab tab-4">
+                            <div class="tab-content tab-c-1">
+                                <h3 class="before">
+                                    Trước đây
+                                </h3>
+                                <ul>
+                                    <li>Mất nhiều thời gian soạn tài liệu đào tạo.</li>
+                                    <li>Khó kiểm soát thời gian học của nhân viên.</li>
+                                    <li>Đánh giá cảm tính, số liệu báo cáo không giá trịy trong việc đào tạo văn hóa doanh nghiệp</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="tab tab-4">
+                            <div class="tab-content tab-c-2">
+                                <h3 class="after">
+                                    Giờ đây
+                                </h3>
+                                <ul>
+                                    <li>Dễ dàng sử dụng, thao tác soạn tài liệu giảng dạy</li>
+                                    <li>Lưu trữ thuận lợi, sử dụng được nhiều lần</li>
+                                    <li>Số liệu chính xác, hỗ trợ công tác tuyển dụng</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-item">
+                    <div class="col-6">
+                        <div class="tab tab-5">
+                            <div class="tab-content tab-c-1">
+                                <h3 class="before">
+                                    Trước đây
+                                </h3>
+                                <ul>
+                                    <li>Tốn thời gian trong việc triển khai khóa đào tạo online.</li>
+                                    <li>Tốn chi phí in ấn , tài liệu cho học viên</li>
+                                    <li>Khó kết nối, kiểm soát quá trình học tập.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="tab tab-6">
+                            <div class="tab-content tab-c-2">
+                                <h3 class="after">
+                                    Giờ đây
+                                </h3>
+                                <ul>
+                                    <li>Mất 5 phút triển khai khóa đào tạo ngắn.</li>
+                                    <li>Tiết kiệm 100% chi phí in ấn, tài liệu cho học viên</li>
+                                    <li>Nâng cao tính chuyên nghiệp trong đào tạo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div class="feature" id="feature">
+        <div class=" inner">
+            <h2>Tính năng tiêu biểu của OLS</h2>
+            <p>Orenda Learning Solution ra đời nhằm giải quyết mọi vấn đề về việc đào tạo trực tuyến, quản trị đào tạo, bán khoá học, dịch
+                vụ
+                tư vấn trực tuyến, chăm sóc học viên.</p>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <img src="https://edutek.io/images/icon/Mask.svg" alt="">
+                    <div class="f-title">
+                        Phòng học ảo tương tác
+                        đa chiều
+                    </div>
+                    <div class="f-desc">
+                        Tương tác trực tiếp qua webcam, chia sẻ màn hình, audio/video, trình chiếu slide, bảng viết
+                        online.
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <img src="https://edutek.io/images/icon/Mask.svg" alt="">
+                    <div class="f-title">
+                        Phòng học ảo tương tác
+                        đa chiều
+                    </div>
+                    <div class="f-desc">
+                        Tương tác trực tiếp qua webcam, chia sẻ màn hình, audio/video, trình chiếu slide, bảng viết
+                        online.
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <img src="https://edutek.io/images/icon/Mask.svg" alt="">
+                    <div class="f-title">
+                        Phòng học ảo tương tác
+                        đa chiều
+                    </div>
+                    <div class="f-desc">
+                        Tương tác trực tiếp qua webcam, chia sẻ màn hình, audio/video, trình chiếu slide, bảng viết
+                        online.
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <img src="https://edutek.io/images/icon/Mask.svg" alt="">
+                    <div class="f-title">
+                        Phòng học ảo tương tác
+                        đa chiều
+                    </div>
+                    <div class="f-desc">
+                        Tương tác trực tiếp qua webcam, chia sẻ màn hình, audio/video, trình chiếu slide, bảng viết
+                        online.
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <img src="https://edutek.io/images/icon/Mask.svg" alt="">
+                    <div class="f-title">
+                        Phòng học ảo tương tác
+                        đa chiều
+                    </div>
+                    <div class="f-desc">
+                        Tương tác trực tiếp qua webcam, chia sẻ màn hình, audio/video, trình chiếu slide, bảng viết
+                        online.
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <img src="https://edutek.io/images/icon/Mask.svg" alt="">
+                    <div class="f-title">
+                        Phòng học ảo tương tác
+                        đa chiều
+                    </div>
+                    <div class="f-desc">
+                        Tương tác trực tiếp qua webcam, chia sẻ màn hình, audio/video, trình chiếu slide, bảng viết
+                        online.
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <img src="https://edutek.io/images/icon/Mask.svg" alt="">
+                    <div class="f-title">
+                        Phòng học ảo tương tác
+                        đa chiều
+                    </div>
+                    <div class="f-desc">
+                        Tương tác trực tiếp qua webcam, chia sẻ màn hình, audio/video, trình chiếu slide, bảng viết
+                        online.
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <img src="https://edutek.io/images/icon/Mask.svg" alt="">
+                    <div class="f-title">
+                        Phòng học ảo tương tác
+                        đa chiều
+                    </div>
+                    <div class="f-desc">
+                        Tương tác trực tiếp qua webcam, chia sẻ màn hình, audio/video, trình chiếu slide, bảng viết
+                        online.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" statistical">
+        <div class="inner">
+            <div class=" statistical-number">
+                <div class="s-item">
+                    <div class="s-number">
+                        +100
+                    </div>
+                    Khách hàng sử dụng
+                </div>
+                <div class="s-item">
+                    <div class="s-number">
+                        +2.342
+                    </div>
+                    Khóa học được tạo
+                </div>
+                <div class="s-item">
+                    <div class="s-number">
+                        +24.223
+                    </div>
+                    Bài kiểm tra
+                </div>
+                <div class="s-item">
+                    <div class="s-number">
+                        +52.594
+                    </div>
+                    Tổng thời gian tương tác
+                </div>
+            </div>
+            <div class="introduce-video row">
+                <div class="col-6">
+                    <h2>
+                        OLS - NỀN TẢNG ĐÀO TẠO TRỰC TUYẾN DÀNH CHO DOANH NGHIỆP, ĐƠN VỊ ĐÀO TẠO, GIÁO VIÊN
+                    </h2>
+                    <p>Giúp tiết kiệm 50% chi phí và thời gian đào tạo, hỗ trợ đo lường kết quả đào tạo một cách chính
+                        xác nhất, hệ thống e-learning chuyên nghiệp, phòng học ảo tương tác trực tiếp đa chiều, cá nhân
+                        hoá trải nghiệm học tập, linh hoạt và hiệu quả,...</p>
+                    <p>Hàng trăm doanh nghiệp, đơn vị đào tạo, giáo viên đã và đang sử hiệu quả. Đừng chần chừ gì nữa,
+                        hãy đăng ký và dùng thử ngay.</p>
+                    <button>Nhận tư vấn ngay</button>
+                </div>
+                <div class="col-6">
+                    <div class="video-thumbnail">
+                        <div class="button-play">
+                            <div class="icon-play">
+                                <i class="bi bi-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="inner d-flex">
+            <div class="col-6">
+                <h2>
+                    Ứng dụng chuyển đổi số cách thức đào tạo nội bộ trong doanh nghiệp
+                </h2>
+                <ul>
+                    <li>Giảm chi phí tổ chức đào tạo</li>
+                    <li>Kiểm soát được tiến độ học của nhân viên</li>
+                    <li>Triển khai khóa đào tạo ngắn chỉ trong 5 phút</li>
+                    <li>Chia sẻ và lưu trữ bài học kinh nghiệm không giới hạn</li>
+                </ul>
+                <div class="list-socials">
+                    <a href="#" class="circle facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" class="circle youtube">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                    <a href="#" class="circle book">
+                        <i class="bi bi-book"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="contact-box ">
+
+                    <h3>Miễn phí sử dụng 7 NGÀY</h3>
+                    <p>Ứng dụng đào tạo nhân sự trực tuyến</p>
+                    <div class="row">
+                        <div class=col-6>
+                            <input placeholder="Họ tên" type="text">
+                            <input placeholder="Email" type="email">
+                            <input placeholder="Số điện thoại" type="tel">
+                        </div>
+                        <div class=col-6>
+                            <textarea rows="4" placeholder="Nội dung" cols="50"></textarea>
+                            <a href="#" class="btn-trial">Dùng thử miễn phí</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="inner">
+            <img src="https://orenda.vn/wp-content/uploads/2022/11/logo-h.png">
+            <div class=" d-flex flex-wrap">
+                <div class="col-lg-6">
+                    <div class="left-footer">
+                        <div class="company-title">CÔNG TY CỔ PHẦN ORENDA</div>
+                        <ul>
+                            <li>
+                                <i class="bi bi-geo-alt"></i><span>Số 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</span>
+                            </li>
+                            <li>
+                                <a href="tel:02462543686">
+                                    <i class="bi bi-telephone"></i><span>024.6254.3686</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:contact@orenda.vn">
+                                    <i class="bi bi-envelope"></i><span>contact@orenda.vn</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex">
+                    <div class="sitemaps col-6">
+                        <h3>Liên kết nhanh</h3>
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Bảng giá</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="timeline-social col-6">
+                        <div class="fb-page" data-href="https://www.facebook.com/OrendaCo" data-width="500"
+                            data-height="200" data-small-header="false" data-adapt-container-width="true"
+                            data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/OrendaCo" class="fb-xfbml-parse-ignore"><a
+                                    href="https://www.facebook.com/OrendaCo">Orenda Co.</a></blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right">
+                Copyright © Orenda., JSC</div>
+        </div>
+
+    </footer>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0&appId=568518568285124&autoLogAppEvents=1"
+        nonce="9JFwREIQ"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $('.tabs-container').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            dots: true
+        });
+
+        // Show the first tab and hide the rest
+        $('.tabs-select .t-select-item:first-child').addClass('active');
+
+        $('.tabs-container').on('afterChange', function (event, slick, currentSlide) {
+            //console.log('afterChange, currentSlide: ', currentSlide);
+            let element = "#select-" + currentSlide;
+            $('.tabs-select .t-select-item').removeClass('active');
+            document.querySelector(element).classList.add('active');
+        });
+
+        $('.slick-dots').on('click', function (ev) {
+            console.log('onClick slick-index:', $(ev.target));
+        });
+
+    </script>
     <script src="/js/script.js"></script>
 </body>
 

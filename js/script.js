@@ -1,7 +1,12 @@
 document.body.style.setProperty('--background-color-active', 'white');
 
+$('#menu-top li:first-child').addClass('active');
+
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    
+    let currentPosition = document.documentElement.scrollTop;
+
+    if (currentPosition > 20 || document.documentElement.scrollTop > 20) {
         document.querySelector("header").style.position = "fixed";
         document.querySelector("header").style.backgroundColor = "#fff";
         document.querySelector("header").style.boxShadow = "0 8px 29px rgb(0 0 0 / 10%)";
@@ -21,16 +26,26 @@ function scrollFunction() {
         document.querySelector(".btn-login").style.backgroundColor = "unset";
         document.body.style.setProperty('--background-color-active', 'white');
     } 
+
+    let positionIntroduce = $("#introduce").position().top - 200;
+    let positionFeature = $("#feature").position().top - 200;
+
+    if(currentPosition<positionIntroduce){
+        $('#menu-top li').removeClass('active');
+        $('#menu-1').addClass('active');
+    }else if(currentPosition>positionIntroduce&&currentPosition<positionFeature){
+        $('#menu-top li').removeClass('active');
+        $('#menu-2').addClass('active');
+    }
+    else if(currentPosition>positionFeature){
+        $('#menu-top li').removeClass('active');
+        $('#menu-3').addClass('active');
+    }
 }
 
-function scrollToIntroduce($event){
-
-    document.querySelector("#menu-top .active").classList.remove("active");
-
-    $event.currentTarget.className = "active";
-    
-    let element = document.querySelector("#introduce");
-    element.scrollIntoView({behavior: "smooth",block: "center", inline: "nearest"});
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 
 window.onscroll = function () {
